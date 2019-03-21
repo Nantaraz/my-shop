@@ -81,41 +81,9 @@ const App = () => {
 
     <div className="container">
 
-      
-
-        {editing ? (
-
-          <div id="pop">
-
-          <div id="po">
-
-          <Edit
-
-            editing={editing}
-
-            setEditing={setEditing}
-
-            currentUser={currentUser}
-
-            updateUser={updateUser}
-
-          />
           
-
-          </div>
-
-          </div>
-
-          
-
-          ):
-
-          (
 
           <Addtab  addUser={addUser} onFilePicked={onFilePicked}  setCount={setCount} count={count}/>
-
-    )}
-
 
 
           <Usetab     users={users}   editRow={editRow} updateUser={updateUser}  deleteUser={deleteUser}/>
