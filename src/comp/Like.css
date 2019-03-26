@@ -1,3 +1,7 @@
 .a {
     color: red;
+    cursor: pointer;
+}
+.c {
+    margin-left: 115px;
 }

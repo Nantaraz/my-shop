@@ -1,3 +1,18 @@
 #r{
-    margin-left: 200px;
+    text-align: end;
+}
+.f {
+    background-color: white;
+}
+.p {
+    background-color: burlywood;
+}
+.q {
+    background-color: aqua
+}
+.e {
+    background-color: darkmagenta;
+}
+.y {
+    margin-top: 15px;
 }

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { confirmAlert } from 'react-confirm-alert'; 
 import 'react-confirm-alert/src/react-confirm-alert.css';
-import AffCom from './AffCom'
+import AffCom from './AffCom';
+import "./Comment.css";
 
 
 const Comment= props => {
@@ -21,13 +22,13 @@ const Comment= props => {
    
     return(
 
-            <button
+            <p className="b"
             onClick={()=>{
                 confirmAlert({
                     customUI: ({ onClose }) => {
                       return (
                         <div className='custom-ui'>
-                          <button onClick={onClose}>X</button>
+                          <button className="btn btn-danger jk"onClick={onClose}>X</button>
                           <form id='ID'
                             onSubmit={
                               (b)=>{
@@ -35,7 +36,7 @@ const Comment= props => {
                                 var test=document.forms['ID'].elements['input'].value
                                //  setCom(coms.concat([test]))
                                addCom(coms,test)
-                                document.getElementById('blabla').innerHTML+=test+'<br/>'
+                                document.getElementById('blabla').innerHTML+=test+'<br/><hr/>'
                                 document.getElementById('coment').value=''
                                 setCot(cot+1)
                               }
@@ -45,7 +46,7 @@ const Comment= props => {
 
                               <input name='input' type="text" id='coment' placeholder={coms.commentaire}/>
 
-                              <button >comment</button>
+                              <button className='btn btn-primary'>comment</button>
                               
                           </form>
                           <div id='blabla'></div>
@@ -56,7 +57,7 @@ const Comment= props => {
                   });
             }}
             > 
-            comment {cot}</button>     
+            comment {cot}</p>     
     )   
         
 }

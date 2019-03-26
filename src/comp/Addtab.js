@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Addtab.css"
 import File from './File'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import ImageUploader from 'react-images-upload';
+// import ImageUploader from 'react-images-upload';
 
 const Addtab = props => {
 	const initialFormState = { id: null, name: '', username: '' ,picture: '',description: ''}
@@ -37,7 +37,8 @@ const Addtab = props => {
 				
 			}}
 		>
-		<div className="nant">
+		<center className="nant">
+		<div >
 			<table>
 				<tbody>
 					<tr>
@@ -54,6 +55,8 @@ const Addtab = props => {
 						</td>
 						<td>
 							<input type="text" name="username" value={user.username} onChange={handleInputChange} />
+							<div id="mi" class="nan">
+							</div>
 						</td>
 					</tr>
 					<tr>
@@ -64,19 +67,22 @@ const Addtab = props => {
 							<textarea  name="description" value={user.description} onChange={handleInputChange} ></textarea>
 						</td>
 					</tr>
+					
 				</tbody>
 			</table>
 			
-			<div id="mi" class="nan">
-		    </div>
-			<div id="lala"><File /></div>	
 			
+			<button className="btn btn-primary l">File</button>
+			{/* <div id="lala"><File /></div>	
+			 */}
 			
 			<button class="btn btn-primary mian" onClick={()=>{isNaN(user.username)? document.getElementById("mi").innerHTML="Entrer un nombre":document.getElementById("mi").innerHTML="" }}
 			>Ajouter</button><br/>
-			<div id="mi" class="nan">
-			</div>
+			
 		</div>
+
+		</center>
+		
 			
 	</form>
 

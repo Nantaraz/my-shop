@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Edit from './comp/Edit'
-
 import Usetab from './comp/Usetab'
 
 import Addtab from './comp/Addtab'
