@@ -8,5 +8,17 @@
 .mian {
     width: 190px;
     margin-left: 40px;
+    margin-top: 20px;
 
+}
+.nant {
+    margin-left: 350px;
+    width:400px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: cadetblue;
+    margin-top: 20px;
+}
+.l {
+    margin-left: 190px;
 }
